@@ -14,13 +14,16 @@ import { cn } from "@/lib/utils";
 import { Icons } from "../icons";
 
 function PostCard(
-  { thumbnail }: { thumbnail?: string },
-  props: React.ComponentPropsWithoutRef<typeof Card>
+  props: React.ComponentPropsWithoutRef<typeof Card> & {
+    thumbnail?: string;
+    title: string;
+    content: string;
+  }
 ) {
   return (
     <Card {...props}>
       <CardHeader className={cn("flex flex-col gap-y-2")}>
-        {thumbnail ? (
+        {props.thumbnail ? (
           <Image
             src="/no-thumbnail.jpg"
             width={200}
@@ -35,9 +38,13 @@ function PostCard(
           <Icons.noThumbnail />
         )}
 
-        <CardTitle>Post Title</CardTitle>
+        <CardTitle>{props.title}</CardTitle>
         <CardDescription>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          {props.content.length! > 100 ? (
+            <>{props?.content?.slice(0, 100)}...</>
+          ) : (
+            <>{props.content}</>
+          )}
         </CardDescription>
       </CardHeader>
       <CardFooter>
