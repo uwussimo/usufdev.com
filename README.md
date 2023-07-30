@@ -1,6 +1,10 @@
-## Getting Started
+## Live Stream usufdev.com
 
-First, run the development server:
+Live Stream (PART 1): https://www.youtube.com/watch?v=vgtC9tJSWfk 
+Full checklist: https://usufdev.notion.site/Blog-App-Checklist-7f801d4fa7934354b9d9d148c79efd0c?pvs=4
+
+## Setup
+First do `npm i` then run the development server:
 
 ```bash
 npm run dev
