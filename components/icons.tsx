@@ -8,6 +8,7 @@ export const Icons = {
       viewBox="0 0 586 139"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="w-40 h-10 md:w-52 md:h-12"
       {...props}
     >
       <path
