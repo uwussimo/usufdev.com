@@ -6,7 +6,7 @@ export default async function Home() {
   const firstPost = posts[0]; // first post
   const restPosts = posts.slice(1, posts.length); // rest of the posts
   return (
-    <main className="p-6 xl:px-36">
+    <main className="p-6 xl:px-36 2xl:px-64">
       <div
         className="grid 
       grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"

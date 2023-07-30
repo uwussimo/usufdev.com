@@ -8,7 +8,7 @@ import { MobileNav } from "./mobile-nav";
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between bg-background p-6 border-b xl:px-36">
+    <nav className="flex items-center justify-between bg-background p-6 border-b xl:px-36 2xl:px-64">
       <Link href="/">
         <Icons.logo />
       </Link>
