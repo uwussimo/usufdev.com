@@ -25,7 +25,9 @@ function Navbar() {
         <Button variant={"ghost"} size={"icon"}>
           <SearchIcon />
         </Button>
-        <Button>Login</Button>
+        <Button asChild>
+          <Link href={"/signin"}>Login</Link>
+        </Button>
       </div>
       <MobileNav />
     </nav>

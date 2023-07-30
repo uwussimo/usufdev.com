@@ -3,9 +3,8 @@ import PostCard from "@/components/blog/post-card";
 export default async function Home() {
   const blogPosts = await fetch("http://localhost:3000/api/blog");
   const posts = await blogPosts.json().then((data) => data.data);
-  const firstPost = posts[0];
-  const restPosts = posts.slice(1, posts.length);
-  console.log(restPosts);
+  const firstPost = posts[0]; // first post
+  const restPosts = posts.slice(1, posts.length); // rest of the posts
   return (
     <main className="p-6 xl:px-36">
       <div
